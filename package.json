@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://Gabriel-3191997.github.io/Future-Seeds",
+  "homepage": "https://github.com/Gabriel-3191997/Future-Seeds",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

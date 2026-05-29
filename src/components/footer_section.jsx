@@ -26,7 +26,7 @@ class FooterSection extends React.Component {
                     </div>
                     <div className="w-[calc(100%-2.5rem)] max-w-lg md:max-w-272 mt-5 mx-5">
                         <form action="#" method="post" className="flex flex-col items-start gap-6">
-                            <input type="text" name="" id="" className="w-full h-12 bg-transparent border-4 border-white text-gray-500 md:py-8 py-3 px-4 outline-none rounded animated-input" placeholder="john@example.com" />
+                            <input type="text" name="" id="" className="w-full h-12 bg-white border-4 border-white text-gray-500 md:py-8 py-3 px-4 outline-none rounded animated-input" placeholder="john@example.com" />
                             <button type="submit" className="h-12 font-serif w-28 border-2 rounded border-white text-white text-xs sm:text-sm uppercase self-start cursor-pointer py-3 md:py-8 animated-button">
                                 subscribe
                             </button>

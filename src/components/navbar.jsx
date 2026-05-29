@@ -17,11 +17,11 @@ class Navbar extends React.Component {
         return (
             <>
             
-<nav className="fixed w-full z-20 top-0 start-0 border-0 nav-drop bg-white">
-  <div className="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto min-h-20 md:min-h-32 p-4">
+<nav className="fixed w-full z-20 top-0 inset-s-0 border-0 nav-drop bg-white">
+  <div className="relative max-w-7xl flex flex-wrap items-center justify-between mx-auto min-h-20 md:min-h-32 p-4">
     <a href="https://flowbite.com/" className="flex flex-col items-start leading-tight rtl:space-x-reverse brand-mark">
         {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-7" alt="Flowbite Logo" /> */}
-        <span className="block md:text-3xl text-2xl text-heading font-semibold font-serif whitespace-nowrap md:mx-10">Future Seeds</span>
+        <span className="block md:text-3xl text-2xl text-heading font-semibold font-serif whitespace-nowrap md:mx-10">FutureSeeds</span>
         
         <span className="block text-sm sm:text-base font-serif md:mx-10">Community Farmers</span>
     </a>

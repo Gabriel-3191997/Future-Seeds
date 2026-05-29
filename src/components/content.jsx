@@ -6,7 +6,7 @@ class Content extends React.Component {
             <>
             {/* row 1 */}
             <div className="flex flex-wrap justify-center items-center gap-10 mt-16 md:mt-20 px-4 md:px-0">
-                <div className="w-full max-w-lg md:w-[32rem]">
+                <div className="w-full max-w-lg md:w-[32rem] reveal-up reveal-delay-2 text-lift">
                     <h1 className="text-2xl sm:text-3xl font-semibold font-serif capitalize md:text-left">
                         sustainbility
                     </h1>
@@ -14,7 +14,7 @@ class Content extends React.Component {
                         We promote environmentally responsible farming practices that protect the land and preserve resources for future generations.
                     </p>
                 </div>
-                <div className="w-full max-w-lg md:w-[32rem]">
+                <div className="w-full max-w-lg md:w-[32rem] reveal-up reveal-delay-3 text-lift">
                      <h1 className="text-2xl sm:text-3xl font-semibold font-serif capitalize md:text-left md:w-md">
                         community engagement
                     </h1>
@@ -27,7 +27,7 @@ class Content extends React.Component {
             {/* row 2 */}
 
             <div className="flex flex-wrap justify-center items-center gap-10 mt-16 md:mt-10 px-4 md:px-0">
-                <div className="w-full max-w-lg md:w-[32rem]">
+                <div className="w-full max-w-lg md:w-[32rem] reveal-up reveal-delay-4 text-lift">
                     <h1 className="text-2xl sm:text-3xl font-semibold font-serif capitalize md:text-left">
                         sustainbility
                     </h1>
@@ -35,7 +35,7 @@ class Content extends React.Component {
                         We promote environmentally responsible farming practices that protect the land and preserve resources for future generations.
                     </p>
                 </div>
-                <div className="w-full max-w-lg md:w-[32rem]">
+                <div className="w-full max-w-lg md:w-[32rem] reveal-up reveal-delay-5 text-lift">
                      <h1 className="text-2xl sm:text-3xl font-semibold font-serif capitalize md:text-left">
                         community engagement
                     </h1>

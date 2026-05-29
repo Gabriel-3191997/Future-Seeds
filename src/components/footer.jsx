@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
         return (
             <>
-                <footer className="bg-white rounded-none border-none font-serif m-4">
+                <footer className="bg-white rounded-none border-none font-serif m-4 reveal-up reveal-delay-5">
                     <div className="w-full mx-auto max-w-screen-xl p-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                         <span className="text-sm text-body text-center md:text-left">
                             © 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.

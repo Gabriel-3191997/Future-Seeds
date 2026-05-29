@@ -18,14 +18,14 @@ class Banner extends React.Component{
             <>
             <div className="flex flex-wrap justify-center items-center gap-4 mt-28 md:mt-50 px-4 md:px-0">
                 {/* div 1 */}
-                <div className="w-full max-w-xl bg-white h-72 sm:h-96 md:h-[38rem]">
+                <div className="w-full max-w-xl bg-white h-72 sm:h-96 md:h-[38rem] reveal-up reveal-delay-1 image-frame">
                     {/* image 1 */}
-                    <img src={selectedImage} alt="FutureSeeds selected" className="w-full h-full rounded object-cover" />
+                    <img key={selectedImage} src={selectedImage} alt="FutureSeeds selected" className="w-full h-full rounded object-cover image-swap" />
                 </div>
                 {/* div 2 */}
                 <div className="w-full max-w-xl flex flex-col gap-4">
                     {/* Gray section at top */}
-                    <div className="bg-white flex-col flex md:h-96 h-auto pb-6 md:pb-0">
+                    <div className="bg-white flex-col flex md:h-96 h-auto pb-6 md:pb-0 reveal-up reveal-delay-2">
                         <h1 className="text-left capitalize font-semibold mx-5 font-serif text-2xl sm:text-3xl mt-5">
                             who we are?
                         </h1>
@@ -34,14 +34,14 @@ class Banner extends React.Component{
                         </p>
                      </div>
                      {/* below columns */}
-                    <div className="flex gap-4 h-36 sm:h-50">
-                        <div className="flex-1  bg-gray-200 border-0">
-                            <button type="button" onClick={() => this.showImage(img)} className="w-full h-full cursor-pointer">
+                    <div className="flex gap-4 h-36 sm:h-50 reveal-up reveal-delay-3">
+                        <div className="flex-1  bg-gray-200 border-0 image-frame">
+                            <button type="button" onClick={() => this.showImage(img)} className="w-full h-full cursor-pointer image-button">
                                 <img src={img} alt="FutureSeeds thumbnail 2" className="w-full h-full rounded object-cover" />
                             </button>
                         </div>
-                        <div className="flex-1  bg-gray-200 border-0">
-                            <button type="button" onClick={() => this.showImage(img3)} className="w-full h-full cursor-pointer">
+                        <div className="flex-1  bg-gray-200 border-0 image-frame">
+                            <button type="button" onClick={() => this.showImage(img3)} className="w-full h-full cursor-pointer image-button">
                                 <img src={img3} alt="FutureSeeds thumbnail 3" className="w-full h-full rounded object-cover" />
                             </button>
                         </div>

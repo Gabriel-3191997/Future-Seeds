@@ -17,15 +17,15 @@ class Navbar extends React.Component {
         return (
             <>
             
-<nav className="bg-white fixed w-full z-20 top-0 start-0 border-0">
+<nav className="fixed w-full z-20 top-0 start-0 border-0 nav-drop bg-white">
   <div className="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto min-h-20 md:min-h-32 p-4">
-    <a href="https://flowbite.com/" className="flex flex-col items-start leading-tight rtl:space-x-reverse">
+    <a href="https://flowbite.com/" className="flex flex-col items-start leading-tight rtl:space-x-reverse brand-mark">
         {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-7" alt="Flowbite Logo" /> */}
         <span className="block md:text-3xl text-2xl text-heading font-semibold font-serif whitespace-nowrap md:mx-10">Future Seeds</span>
         
         <span className="block text-sm sm:text-base font-serif md:mx-10">Community Farmers</span>
     </a>
-    <button onClick={this.toggleMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading" aria-controls="navbar-default" aria-expanded={isMenuOpen}>
+    <button onClick={this.toggleMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading animated-icon-button" aria-controls="navbar-default" aria-expanded={isMenuOpen}>
         <span className="sr-only">Open main menu</span>
         <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
     </button>

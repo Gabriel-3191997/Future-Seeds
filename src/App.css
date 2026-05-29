@@ -1,1 +1,177 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-fade-in {
+  animation: siteFadeIn 500ms ease both;
+}
+
+.nav-drop {
+  animation: navDrop 520ms ease both;
+}
+
+.brand-mark,
+.animated-icon-button,
+.animated-button,
+.image-button,
+.text-lift,
+.image-frame {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    color 220ms ease,
+    background-color 220ms ease,
+    opacity 220ms ease;
+}
+
+.brand-mark:hover {
+  opacity: 0.78;
+}
+
+.animated-icon-button:hover,
+.animated-button:hover {
+  opacity: 0.82;
+}
+
+.animated-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.animated-input {
+  transition:
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.animated-input:focus {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.image-frame {
+  overflow: hidden;
+}
+
+.image-frame img {
+  transition:
+    opacity 300ms ease,
+    filter 300ms ease;
+}
+
+.image-button:hover img {
+  opacity: 0.88;
+}
+
+.image-swap {
+  animation: imageSwap 300ms ease both;
+}
+
+.dark-section-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.dark-section-glow::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  content: "";
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: lineIn 700ms ease 500ms both;
+}
+
+.reveal-up {
+  animation: revealUp 560ms ease both;
+}
+
+.reveal-delay-1 {
+  animation-delay: 140ms;
+}
+
+.reveal-delay-2 {
+  animation-delay: 240ms;
+}
+
+.reveal-delay-3 {
+  animation-delay: 340ms;
+}
+
+.reveal-delay-4 {
+  animation-delay: 440ms;
+}
+
+.reveal-delay-5 {
+  animation-delay: 540ms;
+}
+
+@keyframes siteFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageSwap {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lineIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
